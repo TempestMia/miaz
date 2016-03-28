@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% load staticfiles %}
+  <div class="middle-content">
+      <h1></h1>
+      <p class="quiet">
+          What's your name, traveler?
+      </p>
+      <form id="visitorform" method="POST" action="">
+          {% csrf_token %}
+          {{ form.handle }}
+         <button type="submit" id="go">Continue</button>
+      </form>
+  </div>
+{% endblock content %}
+
+{% block afterbody %}
+  <script>
+  </script>
+{% endblock afterbody %}

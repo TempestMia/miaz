@@ -1,0 +1,7 @@
+\.idea
+\.sass-cache
+core
+db\.sqlite3
+dump\.rdb
+*\.pyc
+local_settings\.py
